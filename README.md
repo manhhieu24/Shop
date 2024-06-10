@@ -12,15 +12,19 @@ This project is a Django application that includes a detailed product view with 
 
 ## Requirements
 
-- Python 3.6+
-- Django 3.2+
-- PostgreSQL (or another database supported by Django)
+- Python 3.12.2
+- Django 5.0.6
+- db.sqlite3 (or another database supported by Django)
 
 ## Installation
 
 1. Clone the repository:
 
 git clone https://github.com/manhhieu24/Shop.git
+
 cd demo
 
+# Required Libraries
+1. Django: The core web framework.
+2. Django REST Framework: A powerful and flexible toolkit for building Web APIs. (pip install django djangorestframework)
 
