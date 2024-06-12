@@ -41,6 +41,9 @@ class ProductModel(models.Model):
         raw_query_product = 'SELECT * FROM app_productmodel WHERE id = %s'
         product = ProductModel.objects.raw(raw_query_product, [id])[0]
         return product
+    
+    def get_related_products(self):
+        return ProductModel.objects.filter(category=self.category).exclude(id=self.id)[:4]
 
 
 

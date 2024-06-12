@@ -187,6 +187,12 @@ label {
   text-align: center;
 }
 
+.related-product-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+}
+
 
 .carousel-item {
   height: 400px; 

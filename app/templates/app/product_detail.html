@@ -46,6 +46,21 @@
 {% endif %}
 
 <hr>
+<h2>Related Products</h2>
+<div class="related-product-list">
+    {% for related_product in related_products %}
+        <div>
+            <a href="{% url 'product_detail' related_product.pk %}">
+            {% if related_product.image %}
+              <img src="{{ related_product.image.url }}" width="100"><br>
+            {% endif %}
+            {{ related_product.name }}</a>
+            <p>Price: ${{ related_product.price }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+<hr>
 <div class="comments-section">
 <span class="heading">Đánh giá sản phẩm:</span>
 <span class="fa fa-star {% if average_stars >= 1 %}checked{% endif %}"></span>

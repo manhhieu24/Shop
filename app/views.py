@@ -1,5 +1,5 @@
 from django.http import HttpResponseRedirect
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import redirect, render
 from django.urls import reverse, reverse_lazy
 from django.views.generic import  CreateView
 from django.views.generic.edit import FormView
@@ -48,6 +48,7 @@ class CategoryView():
 class ProductDetailView():
     def product_detail(request, pk):
         product = ProductModel().get_product(pk)
+        related_products = product.get_related_products()
         comments = CommentModel.objects.filter(product=product)
 
         average_stars = comments.aggregate(Avg('stars'))['stars__avg']
@@ -108,6 +109,7 @@ class ProductDetailView():
             'star_count_dict': star_count_dict,
             'star_percentage': star_percentage,
             'total_comments':  total_comments,
+            'related_products': related_products
         }
         return render(request, 'app/product_detail.html', context)
 
