@@ -22,7 +22,6 @@ This project is a Django application that includes a detailed product view with 
 
 git clone https://github.com/manhhieu24/Shop.git
 
-cd demo
 
 # Required Libraries
 1. Django: The core web framework.
