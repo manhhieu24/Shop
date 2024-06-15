@@ -12,16 +12,17 @@ This project is a Django application that includes a detailed product view with 
 
 ## Requirements
 
-- Python 3.12.2
+- Python 3.12.4
 - Django 5.0.6
 - db.sqlite3 (or another database supported by Django)
 
 ## Installation
 
 1. Clone the repository:
-
 git clone https://github.com/manhhieu24/Shop.git
 
+## Heroku
+https://demodjango-cc9bec0ca1a7.herokuapp.com/
 
 # Required Libraries
 1. Django: The core web framework.
