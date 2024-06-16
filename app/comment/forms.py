@@ -22,6 +22,6 @@ class CommentForm(forms.ModelForm):
                 'class': 'custom-content-class',
                 'placeholder': 'Enter your comment here...',
                 'rows': 2,
-                'cols': 90,
+                'cols': 70,
             }),
         }
