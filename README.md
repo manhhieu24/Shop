@@ -21,8 +21,7 @@ This project is a Django application that includes a detailed product view with 
 1. Clone the repository:
 git clone https://github.com/manhhieu24/Shop.git
 
-## Heroku
-https://demodjango-cc9bec0ca1a7.herokuapp.com/
+
 
 # Required Libraries
 1. Django: The core web framework.
