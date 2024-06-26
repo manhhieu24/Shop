@@ -21,6 +21,9 @@ This project is a Django application that includes a detailed product view with 
 1. Clone the repository:
 git clone https://github.com/manhhieu24/Shop.git
 
+## Vercel
+
+https://shop-jt45bn4nf-manhhieu24s-projects.vercel.app/
 
 
 # Required Libraries
