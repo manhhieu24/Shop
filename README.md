@@ -23,7 +23,7 @@ git clone https://github.com/manhhieu24/Shop.git
 
 ## Vercel
 
-https://shop-sable-five.vercel.app/
+https://shop-one-tawny.vercel.app/
 
 
 # Required Libraries
